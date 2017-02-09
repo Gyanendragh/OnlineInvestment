@@ -20,7 +20,7 @@ public class StaffController {
 	@Autowired
 	StaffService staffService;
 	
-	// to show the  staff.jsp page to add new staff
+	
 	@RequestMapping(value={"/add"},method=RequestMethod.GET)
 	public String getForm(@ModelAttribute("newStaff") Staff staff,Model model){
 		return "staffAddForm";
